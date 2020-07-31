@@ -1,0 +1,209 @@
+.header {
+    padding: 20rem;
+    padding-top: 15rem;
+    background-image: linear-gradient(to right bottom,
+                                        rgba($color-primary-light,.8),
+                                        rgba($color-primary-dark,.8)),
+                                        url(../images/princess.jpg);
+    background-size: cover;
+    background-position: top;
+    clip-path: polygon(0 0, 100% 0, 100% 90%, 0 100%);
+    position: relative;
+
+
+    &__shape {
+        position: relative;
+        display: inline-block;
+
+        &:hover .header__caption {
+            opacity: 0;
+        }
+        
+        &:hover .header__picture {
+            filter: blur(0) brightness(100%);    
+        }
+
+        
+    }
+
+    &__picture {
+        width: 20rem;
+        height: 20rem;
+        border-radius: 100rem; 
+        filter: blur(5px) brightness(50%);
+        transition: all .5s;
+        clip-path: circle(50%);
+        border: 5px solid $color-white;
+    }
+
+    &__caption {
+        font-size: 5rem;
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        transition: all .5s;
+    }
+}
+
+.social {
+    position: absolute;
+    left: 0;
+    top: 0;
+
+    &__link:link,
+    &__link:visited {
+        text-decoration: none;
+        float: left;
+        color: $color-white;
+        padding: .5rem;
+        transition: all .5s ease-out;
+        margin-right: 2rem;;
+
+        &:hover {
+            color: $color-gray-dark;
+        }
+
+    }
+
+    &__picture {
+        font-size: 4rem;
+    }
+}
+.nav {
+    position: absolute;
+    right: 0;
+    top: 0;
+
+    &__item {
+        
+        list-style: none;
+        float: right;
+        padding: 1rem;
+        margin-left: 2rem;
+        font-size: 2rem;
+        transition: all .4s ease-in;
+        
+        &:hover {
+            background-color: $color-gray-dark;
+        }
+
+    }
+
+    &__link:link,
+    &__link:visited {
+        text-decoration: none;
+        text-transform: uppercase;
+        color: $color-white;
+    }
+    
+}
+
+
+.intro {
+    background-color: $color-white;
+    padding: 20rem;
+    margin-top: -12rem;
+
+
+    &__box {
+        width: 90%;
+        margin: 0 auto;
+        box-shadow: 0 3rem 6rem rgba($color-black, .1);
+        background-color: $color-gray-light;
+        border-radius: 10px;
+        padding: 3rem;
+        padding-left: 5rem;
+    }
+
+    &__text{
+        color: $color-primary;
+        font-size: $default-font-size;
+
+    }
+
+}
+
+
+.skills {
+    padding: 20rem;
+    padding-top: 10rem;
+    background-image: linear-gradient(to right bottom,
+                                        rgba($color-primary-light,.8),
+                                        rgba($color-primary-dark,.8)),
+                                        url(../images/nyc.jpg);
+    background-size: cover;
+    background-position: top;
+
+    transform: skewY(-3deg);
+
+    & > * {
+        transform: skewY(3deg);
+    }
+
+}
+
+
+
+.projects {
+    padding: 20rem;
+    background-color: $color-white;
+    margin-top: -12rem;
+
+
+    &__box {
+        width: 100%;
+        margin: 0 auto;
+        box-shadow: 0 3rem 6rem rgba($color-black, .1);
+        background-color: $color-gray-light;
+        border-radius: 10px;
+        padding: 4rem;
+        padding-right: 6rem;
+
+        @include clearfix;
+    }
+
+    &__text{
+        color: $color-primary;
+        font-size: $default-font-size;
+
+    }
+
+    &__picture {
+        width: 40%;
+        float: right;
+        transform: translateX(2rem);
+        transition: all .2s;
+
+        &--small {
+            width: 14%;
+        }
+
+        &:hover {
+            border: 3px solid $color-primary-dark;
+            transform: scale(1.03);
+        }
+    }
+
+    &__link:link,
+    &__link:visited {
+        text-decoration: none;
+        color: $color-primary-light;
+        text-transform: lowercase;
+
+        &:hover {
+            color: $color-primary-dark;
+        }
+    }
+}
+
+
+.footer {
+    padding-top: 2rem;
+    padding-bottom: 8rem;
+    background-color: $color-primary-light;
+    
+    &__text {
+        font-size: $default-font-size;
+    }
+}

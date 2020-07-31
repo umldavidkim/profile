@@ -293,8 +293,7 @@ body {
     .projects__picture--small {
       width: 14%; }
     .projects__picture:hover {
-      border: 3px solid #0f4c75;
-      transform: scale(1.03); }
+      transform: translateX(0); }
   .projects__link:link, .projects__link:visited {
     text-decoration: none;
     color: #bbe1fa;

@@ -242,7 +242,7 @@ body {
 
 .intro {
   background-color: #fff;
-  padding: 20rem;
+  padding: 20rem 0;
   margin-top: -12rem; }
   .intro__box {
     width: 90%;
@@ -267,7 +267,7 @@ body {
     transform: skewY(3deg); }
 
 .projects {
-  padding: 20rem;
+  padding: 20rem 0;
   background-color: #fff;
   margin-top: -12rem; }
   .projects__box {

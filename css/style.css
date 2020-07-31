@@ -257,7 +257,7 @@ body {
     font-size: 1.6rem; }
 
 .skills {
-  padding: 20rem;
+  padding: 20rem 0;
   padding-top: 10rem;
   background-image: linear-gradient(to right bottom, rgba(187, 225, 250, 0.8), rgba(15, 76, 117, 0.8)), url(../images/nyc.jpg);
   background-size: cover;

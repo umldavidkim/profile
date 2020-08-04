@@ -124,6 +124,10 @@ body {
 .u-margin-top-lg {
   margin-top: 8rem; }
 
+.u-width-90 {
+  width: 90%;
+  margin: 0 auto; }
+
 .feature-box {
   background-color: rgba(255, 255, 255, 0.6);
   font-size: 1.5rem;
@@ -161,19 +165,19 @@ body {
   .row [class^="col-"] {
     float: left; }
     .row [class^="col-"]:not(:last-child) {
-      margin-right: 5rem; }
+      margin-right: 3rem; }
   .row .col-1-of-2 {
-    width: calc((100% - 5rem) / 2); }
+    width: calc((100% - 3rem) / 2); }
   .row .col-1-of-3 {
-    width: calc((100% - 2 * 5rem) / 3); }
+    width: calc((100% - 2 * 3rem) / 3); }
   .row .col-2-of-3 {
-    width: calc(2 * ((100% - 2 * 5rem) / 3) + 5rem); }
+    width: calc(2 * ((100% - 2 * 3rem) / 3) + 3rem); }
   .row .col-1-of-4 {
-    width: calc((100% - 3 * 5rem) / 4); }
+    width: calc((100% - 3 * 3rem) / 4); }
   .row .col-2-of-4 {
-    width: calc(2 * ((100% - 3 * 5rem) / 4) + 5rem); }
+    width: calc(2 * ((100% - 3 * 3rem) / 4) + 3rem); }
   .row .col-3-of-4 {
-    width: calc(3* ((100% - 3 * 5rem) / 4) + (2 * 5rem)); }
+    width: calc(3* ((100% - 3 * 3rem) / 4) + (2 * 3rem)); }
 
 .header {
   padding: 20rem;
@@ -271,7 +275,7 @@ body {
   background-color: #fff;
   margin-top: -12rem; }
   .projects__box {
-    width: 100%;
+    width: 90%;
     margin: 0 auto;
     box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1);
     background-color: #eee;
